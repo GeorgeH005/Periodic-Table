@@ -83,7 +83,7 @@ def painting():
 	print(  '   \  /    ')
 	print('   / \                  Python program for chemistry')
 	print('  /o   \ ' )   
-	print(' /______\                 Made by ~Bill~, Edited')
+	print(' /______\                 Made by ~Bill~')
 	print("\033[1;37;40m")		
 
 painting()

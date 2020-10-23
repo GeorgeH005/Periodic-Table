@@ -95,102 +95,82 @@ period=get_period(num)
 group=get_group(num)
 
 #allocate layers
-k=[]
 if num<2:
-	k.append(1)
+	k = 1
 	num=0
 elif num>=2:
-	k.append(2)
+	k = 2
 	num=num - 2
 
 
 if num <= 8:
-	l=[]
-	l.append(num)
+	l = num
 	num=0
 elif num>8:
-	l=[]
-	l.append(8)
+	l = 8
 	num=num-8
 
 
 if num<9:
-	m=[]
-	m.append(num)
+	m = num
 	num=0
 elif num>8 and num<19:
-	m=[]
-	m.append(8)
+	m = 8
 	num=num-8
 elif num>18:
-	m=[]
-	m.append(18)	
+	m= 18
 	num=num-18
 	
-	
+
 if num<9:
-	n=[]
-	n.append(num)
+	n = num
 	num=0
 elif num>8 and num<19:
-	n=[]
-	n.append(8)
+	n = 8
 	num=num-8
 elif num>18 and num<33:
-	n=[]
-	n.append(18)
+	n = 18
 	num=num-18
 elif num>32:
-	n=[]
-	n.append(32)
+	n = 32
 	num=num-32 
 
 
 if num<9:
-	o=[]
-	o.append(num)
+	o = num
 	num=0
 elif num>8 and num<19:
-	o=[]
-	o.append(8)
+	o = 8
 	num=num-8
 elif num>18 and num<33:
-	o=[]
-	o.append(18)
+	o = 18
 	num=num-18
 elif num>32:
-	o=[]
-	o.append(32)
+	o = 32
 	num=num-32 
 
 
 if num<9:
-	p=[]
-	p.append(num)
+	p= num
 	num=0
 elif num>8 and num<19:
-	p=[]
-	p.append(8)
+	p = 8
 	num=num-8
 elif num>18 and num<33:
-	p=[]
-	p.append(18)
+	p = 18
 	num=num-18
 elif num>32:
-	p=[]
-	p.append(32)
+	p = 32
 	num=num-32 
 
 
 if num<9:
-	q=[]
-	q.append(num)
+	q = num
 	num=0
 elif num>8 and num<19:
-	q=[]
-	q.append(8)
+	q= 8
 	num=num-8
 
 
 print("\033[1;36;40m")
-print(' K',k,'L',l,'M',m,'N',n,'O',o,'P',p,'Q',q)
+print(' K',[k],'L',[l],'M',[m],'N',[n],'O',[o],'P',[p],'Q',[q])

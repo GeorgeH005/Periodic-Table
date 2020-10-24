@@ -201,7 +201,11 @@ def mode3(grp,per):
 		if grp<=2:
 			num=grp+10
 		else:
-			num=grp		
+			num=grp
+	elif per == 4:
+			num = grp + 18
+	elif per == 5:
+			num = grp + 36
 	print(num)
 
 #input and modes
@@ -225,6 +229,6 @@ elif mode=='2':
 	group=get_group(num)
 	allocate(num)
 elif mode=="3":
-	grp = int(input())
-	per = int(input())
+	grp = int(input("grp"))
+	per = int(input("per"))
 	mode3(grp,per)

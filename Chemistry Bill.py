@@ -101,6 +101,93 @@ def painting():
 
 #allocate layers
 def allocate(num):
+	k=[]
+	if num<2:
+		k.append(1)
+		num=0
+	elif num>=2:
+		k.append(2)
+		num=num - 2
+	if num <= 8:
+		l=[]
+		l.append(num)
+		num=0
+	elif num>8:
+		l=[]
+		l.append(8)
+		num=num-8
+	if num<9:
+		m=[]
+		m.append(num)
+		num=0
+	elif num>8 and num<19:
+		m=[]
+		m.append(8)
+		num=num-8
+	elif num>18:
+		m=[]
+		m.append(18)	
+		num=num-18	
+	if num<9:
+		n=[]
+		n.append(num)
+		num=0
+	elif num>8 and num<19:
+		n=[]
+		n.append(8)
+		num=num-8
+	elif num>18 and num<33:
+		n=[]
+		n.append(18)
+		num=num-18
+	elif num>32:
+		n=[]
+		n.append(32)
+		num=num-32 
+	if num<9:
+		o=[]
+		o.append(num)
+		num=0
+	elif num>8 and num<19:
+		o=[]
+		o.append(8)
+		num=num-8
+	elif num>18 and num<33:
+		o=[]
+		o.append(18)
+		num=num-18
+	elif num>32:
+		o=[]
+		o.append(32)
+		num=num-32 
+	if num<9:
+		p=[]
+		p.append(num)
+		num=0
+	elif num>8 and num<19:
+		p=[]
+		p.append(8)
+		num=num-8
+	elif num>18 and num<33:
+		p=[]
+		p.append(18)
+		num=num-18
+	elif num>32:
+		p=[]
+		p.append(32)
+		num=num-32 
+	if num<9:
+		q=[]
+		q.append(num)
+		num=0
+	elif num>8 and num<19:
+		q=[]
+		q.append(8)
+		num=num-8
+	print("\033[1;36;40m")
+	print(' K',k,'L',l,'M',m,'N',n,'O',o,'P',p,'Q',q)
+
+def allocate2(num):
 	global k, l, m, n, o, p, q
 	if num<2:
 		k = 1

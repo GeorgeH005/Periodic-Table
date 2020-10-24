@@ -98,27 +98,6 @@ def painting():
 	print(' /______\                 Made by ~Bill~')
 	print("\033[1;37;40m")		
 
-painting()
-#input and modes
-painting()
-print('   [1] Give an element')
-print('   [2] Give a number')
-print('   [3] Give period line and group')
-mode=input("Choose a mode:")
-if mode=='1':
-	element=input(" Type an element from 	the A group:")
-	num=get_num(str(element))
-	print("\033[1;33;40m")
-	period=get_period(num)
-	group=get_group(num)
-	allocate(num)
-elif mode=='2':
-	num=input('Type an atomic number:')
-	element=get_element(str(num))
-	print("\033[1;33;40m")
-	period=get_period(num)
-	group=get_group(num)
-	allocate(num)
 
 #allocate layers
 def allocate(num):
@@ -191,6 +170,28 @@ def allocate(num):
 	elif num>8 and num<19:
 		q= 8
 		num=num-8
+
+#input and modes
+painting()
+print('   [1] Give an element')
+print('   [2] Give a number')
+print('   [3] Give period line and group')
+mode=input("Choose a mode:")
+if mode=='1':
+	element=input(" Type an element from 	the A group:")
+	num=get_num(str(element))
+	print("\033[1;33;40m")
+	period=get_period(num)
+	group=get_group(num)
+	allocate(num)
+elif mode=='2':
+	num=input('Type an atomic number:')
+	element=get_element(str(num))
+	print("\033[1;33;40m")
+	period=get_period(num)
+	group=get_group(num)
+	allocate(num)
+
 
 print("\033[1;36;40m")
 print(' K',[k],'L',[l],'M',[m],'N',[n],'O',[o],'P',[p],'Q',[q])

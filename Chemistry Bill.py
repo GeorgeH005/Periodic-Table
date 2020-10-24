@@ -197,6 +197,11 @@ def mode3(grp,per):
 			num = grp + 2
 		else:
 			num = grp - 8
+	elif per==3:
+		if grp<=2:
+			num=grp+10
+		else:
+			num=grp		
 	print(num)
 
 #input and modes

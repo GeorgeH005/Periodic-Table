@@ -1,3 +1,10 @@
+import os
+import platform
+def clear():
+	if platform.system == "Linux" or "Darwin":
+		os.system("clear")
+	elif platform.system == "Windows":
+		os.system("cls")
 #matching elements with atomic number
 def get_num(element):
 	elements={'H':1, 'He':2, 'Li':3, 'Be':4, 'B':5, 'C':6, 'N':7, 'O':8, 'F':9, 'Ne':10, 'Na':11, 'Mg':12, 'Al':13, 'Si':14, 'P':15, 'S':16, 'Cl':17, 'Ar':18, 'K':19, 'Ca':20, 'Ga':31, 'Ge':32, 'As':33, 'Se':34, 'Br':35, 'Kr':36, 'Rb':37, 'Sr':38, 'In':49, 'Sn':50, 'Sb':51, 'Te':52, 'I':53, 'Xe':54, 'Cs':55, 'Ba':56, 'Tl':81, 'Pb':82, 'Bi':83, 'Po':84, 'At':85, 'Rn':86, 'Fr':87, 'Ra':88, 'Nh':113, 'Fl':114, 'Mc':115, 'Lv':116, 'Ts':117, 'Og':118}
@@ -226,6 +233,7 @@ print('   [2] Give an atomic number')
 print('   [3] Give period line and group')
 mode=input("Choose a mode:")
 if mode=='1':
+	clear()
 	element=input(" Type an element from the A group:")
 	num=get_num(str(element))
 	print("\033[1;33;40m")
@@ -233,6 +241,7 @@ if mode=='1':
 	group=get_group(num)
 	allocate(num)
 elif mode=='2':
+	clear()
 	num=int(input('Type an atomic number:'))
 	element=get_element(int(num))
 	print("\033[1;33;40m")
@@ -240,10 +249,9 @@ elif mode=='2':
 	group=get_group(num)
 	allocate(num)
 elif mode=="3":
+	clear()
 	grp = int(input("Type a group:"))
 	per = int(input("Type a period line:"))
 	num = mode3(grp,per)
 	element=get_element(num)
-	period=get_period(num)
-	group=get_group(num)
 	allocate(num)

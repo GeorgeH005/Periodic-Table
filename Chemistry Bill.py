@@ -3,6 +3,7 @@ def get_num(element):
 	elements={'H':1, 'He':2, 'Li':3, 'Be':4, 'B':5, 'C':6, 'N':7, 'O':8, 'F':9, 'Ne':10, 'Na':11, 'Mg':12, 'Al':13, 'Si':14, 'P':15, 'S':16, 'Cl':17, 'Ar':18, 'K':19, 'Ca':20, 'Ga':31, 'Ge':32, 'As':33, 'Se':34, 'Br':35, 'Kr':36, 'Rb':37, 'Sr':38, 'In':49, 'Sn':50, 'Sb':51, 'Te':52, 'I':53, 'Xe':54, 'Cs':55, 'Ba':56, 'Tl':81, 'Pb':82, 'Bi':83, 'Po':84, 'At':85, 'Rn':86, 'Fr':87, 'Ra':88, 'Nh':113, 'Fl':114, 'Mc':115, 'Lv':116, 'Ts':117, 'Og':118}
 	if element in elements:
 		num=int(elements[element])
+		print("\033[1;37;40m")
 		print('  Z=', num)
 	else:
 		print("Element Not Supported!!")
@@ -95,7 +96,7 @@ def painting():
 	print(  '   \  /    ')
 	print('   / \                  Python program for chemistry')
 	print('  /o   \ ' )   
-	print(' /______\                 Made by ~Bill~')
+	print(' /______\                 Made by ~Bill~ & ~George~')
 	print("\033[1;37;40m")		
 
 
@@ -221,7 +222,7 @@ def mode3(grp,per):
 #input and modes
 painting()
 print('   [1] Give an element')
-print('   [2] Give a number')
+print('   [2] Give an atomic number')
 print('   [3] Give period line and group')
 mode=input("Choose a mode:")
 if mode=='1':

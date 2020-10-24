@@ -187,7 +187,17 @@ def allocate(num):
 	print("\033[1;36;40m")
 	print(' K',k,'L',l,'M',m,'N',n,'O',o,'P',p,'Q',q)
 
-
+def mode3(grp,per):
+	if per == 1 and grp == 1:
+		num = 1
+	elif per == 1 and grp == 18:
+		num = 2
+	elif per == 2:
+		if grp <= 2:
+			num = grp + 2
+		else:
+			num = grp - 8
+	print(num)
 
 #input and modes
 painting()
@@ -210,4 +220,6 @@ elif mode=='2':
 	group=get_group(num)
 	allocate(num)
 elif mode=="3":
-	print("Mode Not Supported")
+	grp = int(input())
+	per = int(input())
+	mode3(grp,per)

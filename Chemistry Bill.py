@@ -206,6 +206,11 @@ def mode3(grp,per):
 			num = grp + 18
 	elif per == 5:
 			num = grp + 36
+	elif per == 6:
+		if grp <= 2:
+			num = grp + 54
+		else:
+			num = grp + (69 - 1)
 	print(num)
 
 #input and modes

@@ -209,4 +209,5 @@ elif mode=='2':
 	period=get_period(num)
 	group=get_group(num)
 	allocate(num)
-
+elif mode=="3":
+	print("Mode Not Supported")

@@ -102,14 +102,12 @@ elif num>=2:
 	k = 2
 	num=num - 2
 
-
 if num <= 8:
 	l = num
 	num=0
 elif num>8:
 	l = 8
 	num=num-8
-
 
 if num<9:
 	m = num
@@ -121,7 +119,6 @@ elif num>18:
 	m= 18
 	num=num-18
 	
-
 if num<9:
 	n = num
 	num=0
@@ -134,7 +131,6 @@ elif num>18 and num<33:
 elif num>32:
 	n = 32
 	num=num-32 
-
 
 if num<9:
 	o = num
@@ -149,7 +145,6 @@ elif num>32:
 	o = 32
 	num=num-32 
 
-
 if num<9:
 	p= num
 	num=0
@@ -163,14 +158,12 @@ elif num>32:
 	p = 32
 	num=num-32 
 
-
 if num<9:
 	q = num
 	num=0
 elif num>8 and num<19:
 	q= 8
 	num=num-8
-
 
 print("\033[1;36;40m")
 print(' K',[k],'L',[l],'M',[m],'N',[n],'O',[o],'P',[p],'Q',[q])

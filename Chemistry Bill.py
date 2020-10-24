@@ -101,13 +101,13 @@ def painting():
 
 #allocate layers
 def allocate(num):
+	global k, l, m, n, o, p, q
 	if num<2:
 		k = 1
 		num=0
 	elif num>=2:
 		k = 2
 		num=num - 2
-
 	if num <= 8:
 		l = num
 		num=0

@@ -211,7 +211,12 @@ def mode3(grp,per):
 			num = grp + 54
 		else:
 			num = grp + (69 - 1)
-	print(num)
+	elif per== 7:
+		if grp <= 2:
+			num=grp+86
+		else:
+			num=grp+100
+	return num
 
 #input and modes
 painting()
@@ -234,6 +239,10 @@ elif mode=='2':
 	group=get_group(num)
 	allocate(num)
 elif mode=="3":
-	grp = int(input("grp"))
-	per = int(input("per"))
-	mode3(grp,per)
+	grp = int(input("Type a group:"))
+	per = int(input("Type a period line:"))
+	num = mode3(grp,per)
+	element=get_element(num)
+	period=get_period(num)
+	group=get_group(num)
+	allocate(num)

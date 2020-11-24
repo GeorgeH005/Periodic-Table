@@ -257,4 +257,4 @@ elif mode=="3":
 	allocate(num)
 else:
 	print("\033[1;31;40m")
-	print(" Invalid mode!")
+	print(" Invalid mode! YEET!")

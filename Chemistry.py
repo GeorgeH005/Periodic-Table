@@ -22,9 +22,10 @@ def get_element(num):
 	if num in nums:
 		element=nums[num]
 		print('  Element:', element)
+		print('  Z=', num)
 	else:
 		print("\033[1;31;40m")
-		print("Number Not Supported!")
+		print("Element Not Supported!")
 		raise SystemExit
 	num = int(num)
 	return num
